@@ -9,6 +9,27 @@
 </head>
 <body>
     
+    <div class="container">
+        <form class="form" id="login">
+            <h1 class="formTitle">Login</h1>
+            <div class="formMessage formMessageError">Incorrect Username/Password combination</div>
+            <div class="formInputGroup">
+                <input type="text" class="formInput" placeholder="Username or Email" autofocus>
+                <div class="formInputErrorMessage">This is an Error</div>
+            </div>
+            <div class="formInputGroup">
+                <input type="password" class="formInput" placeholder="Password" autofocus>
+                <div class="formInputErrorMessage"></div>
+            </div>
+            <button class="formButton" type="button">Continue</button>
+            <p class="formText">
+                <a href="#" class="formLink">Forgot your password?</a>
+            </p>
+            <p class="formText">
+                <a id="linkCreateAccount" href="./"class="formLink">Don't have an Account? Create Account</a>
+            </p>
+        </form>
+    </div>
 
     <script src="./script.js"></script>
 </body>
