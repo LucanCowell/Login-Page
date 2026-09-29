@@ -14,9 +14,9 @@ app.use(express.json()); // Allows server to read incoming JSON data
 // A mock Database (Array) to hold users
 const usersDatabase = [];
 
-// ==========================================
+
 // 1. REGISTRATION ROUTE (Sign Up)
-// ==========================================
+
 app.post('/api/register', async (req, res) => {
     try {
         const { username, email, password } = req.body;
@@ -45,9 +45,9 @@ app.post('/api/register', async (req, res) => {
     }
 });
 
-// ==========================================
+
 // 2. LOGIN ROUTE
-// ==========================================
+
 app.post('/api/login', async (req, res) => {
     try {
         const { usernameOrEmail, password } = req.body;
