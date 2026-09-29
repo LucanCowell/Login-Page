@@ -48,14 +48,23 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.querySelectorAll(".formInput").forEach(inputElement => {
-        inputElement.addEventListener("blur", e => {
-            if (e.target.id === "signupUsername" && e.target.value.length > 0 && e.target.value.length < 10) {
-                setInputError(inputElement, "Username must be at least 10 characters long");
-            }
-        });
+    inputElement.addEventListener("blur", e => {
+        if (e.target.id === "signupUsername" && e.target.value.length > 0 && e.target.value.length < 10) {
+            setInputError(inputElement, "Username must be at least 10 characters long");
+        }
 
-        inputElement.addEventListener("input", e => {
-            clearInputError(inputElement);
-        });
+        if (e.target.id === "signupConfirmPassword") {
+            const passwordElement = document.querySelector("#signupPassword");
+            
+            if (e.target.value.length > 0 && passwordElement.value !== e.target.value) {
+                setInputError(inputElement, "Passwords do not match");
+            }
+        }
     });
+
+    inputElement.addEventListener("input", e => {
+        clearInputError(inputElement);
+    });
+});
+
 });
