@@ -1,0 +1,54 @@
+body {
+    --colorPrimary: #009579;
+    --colorPrimaryDark: #007f67;
+    --colorSecondary: #252c6a;
+    --colorError: #cc3333;
+    --colorSuccess: #4bb544;
+    --borderRadius: 4px;
+
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background: var(--colorPrimary);
+}
+
+.container {
+    width: 400px;
+    max-width: 400px;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 40px rgba(0,0,0,0.2);
+    border-radius: var(--borderRadius);
+    background: #ffffff;
+}
+
+.container,
+.formInput,
+.formButton {
+    font: 500 1rem 'Quicksand', sans-serif;
+}
+
+.form > *:first-child {
+    margin-top: 0;
+}
+
+.form > *:last-child {
+    margin-bottom: 0;
+}
+
+.formMessage {
+    text-align:center;
+    margin-bottom: 1rem;
+}
+
+.formMessageSuccess {
+    color: var(--colorSuccess);
+}
+
+.formMessageError {
+    color: var(--colorError);
+}
+
