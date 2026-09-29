@@ -4,53 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-        <script src="https://kit.fontawesome.com/50bffcd4b6.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/50bffcd4b6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     
     <div class="container">
         <form class="form" id="login">
             <h1 class="formTitle">Login</h1>
-            <div class="formMessage formMessageError"></div>
+            <div class="formMessage"></div>
             <div class="formInputGroup">
                 <input type="text" class="formInput" placeholder="Username or Email" autofocus>
-                <div class="formInputErrorMessage">This is an Error</div>
-            </div>
-            <div class="formInputGroup">
-                <input type="password" class="formInput" placeholder="Password" autofocus>
                 <div class="formInputErrorMessage"></div>
             </div>
-            <button class="formButton" type="button">Continue</button>
+            <div class="formInputGroup">
+                <input type="password" class="formInput" placeholder="Password">
+                <div class="formInputErrorMessage"></div>
+            </div>
+            <button class="formButton" type="submit">Continue</button>
             <p class="formText">
                 <a href="#" class="formLink">Forgot your password?</a>
             </p>
             <p class="formText">
-                <a id="linkCreateAccount" href="./"class="formLink">Don't have an Account? Create Account</a>
+                <a id="linkCreateAccount" href="#" class="formLink">Don't have an Account? Create Account</a>
             </p>
         </form>
+
         <form class="form formHidden" id="createAccount">
             <h1 class="formTitle">Create Account</h1>
-            <div class="formMessage formMessageError"></div>
+            <div class="formMessage"></div>
             <div class="formInputGroup">
-                <input type="text" class="formInput" placeholder="Username" autofocus>
+                <input type="text" id="signupUsername" class="formInput" placeholder="Username">
                 <div class="formInputErrorMessage"></div>
             </div>
             <div class="formInputGroup">
-                <input type="text" class="formInput" placeholder="Email Address" autofocus>
+                <input type="text" class="formInput" placeholder="Email Address">
                 <div class="formInputErrorMessage"></div>
             </div>
             <div class="formInputGroup">
-                <input type="password" class="formInput" placeholder="Password" autofocus>
+                <input type="password" class="formInput" placeholder="Password">
                 <div class="formInputErrorMessage"></div>
             </div>
             <div class="formInputGroup">
-                <input type="password" class="formInput" placeholder="Confirm Password" autofocus>
+                <input type="password" class="formInput" placeholder="Confirm Password">
                 <div class="formInputErrorMessage"></div>
             </div>
-            <button class="formButton" type="button">Continue</button>
+            <button class="formButton" type="submit">Continue</button>
             <p class="formText">
-                <a id="linkCreateAccount" href="./"class="formLink">Already have an account? Sign in</a>
+                <a id="linkLogin" href="#" class="formLink">Already have an account? Sign in</a>
             </p>
         </form>
     </div>
